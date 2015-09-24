@@ -1,3 +1,34 @@
+/*
+ * Interview Questions
+ * Copyright (C) 2015  Dave S Desrochers <dave726@gmail.com>
+ *
+ * This program is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU General Public License
+ * as published by the Free Software Foundation; either version 2
+ * of the License, or (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+ *
+ *  - Reverse the order of all the words, "in-place"
+ *  - The string can be of arbitrary length i.e. no hard-coded limits
+ *  - No C-runtime library
+ *  - no dynamic memory, no C string functions.
+ *
+ *  void*  reverse_word_order(char* str);
+ *
+ *  e.g.
+ *  input: "this is a string"
+ *  output: "string a is this"
+ *
+ */
+
 #include <stdio.h>
 #include <string.h>
 #include <stdbool.h>
@@ -56,7 +87,7 @@ char* reverse_string(char *test_string, int string_size)
 	return test_string;
 }
 
-char* reverse_word_order(char *test_string)
+void* reverse_word_order(char *test_string)
 {
 	char *p = test_string;
 	char *e = test_string;
