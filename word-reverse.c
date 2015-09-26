@@ -16,6 +16,9 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
  *
+ * ==========================
+ * = PROBLEM
+ * ==========================
  *  - Reverse the order of all the words, "in-place"
  *  - The string can be of arbitrary length i.e. no hard-coded limits
  *  - No C-runtime library
